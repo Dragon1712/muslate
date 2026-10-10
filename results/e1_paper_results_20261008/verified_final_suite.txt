@@ -1,0 +1,139 @@
+test_conservative.py
+ok  test_adaptive_horizon_returns_a_valid_horizon
+ok  test_behavior_support_is_discriminative
+ok  test_biased_model_bias_grows_with_saturation
+ok  test_biased_model_leaves_the_environment_alone
+ok  test_latent_support_zero_at_reference_and_grows_away
+ok  test_ood_penalty_reduces_rewards_monotonically
+ok  test_perfect_uncertainty_equals_absolute_bias
+ok  test_uncertainty_penalty_requires_an_ensemble
+ok  test_zero_penalty_is_identity
+
+9 tests passed
+
+test_env.py
+ok  test_batch_matches_loop
+ok  test_diversity_breaks_separability
+ok  test_diversity_is_immediate_not_delayed
+ok  test_diversity_penalises_same_category_slates
+ok  test_diversity_penalty_is_zero_by_default
+ok  test_horizon_and_gamma
+ok  test_lt0_is_a_bandit
+ok  test_saturation_penalty_is_delayed
+ok  test_sid_hierarchy_is_meaningful
+
+9 tests passed
+
+test_error_model.py
+ok  test_collect_latents_matches_state_dim
+ok  test_correlation_helpers
+ok  test_error_dataset_pairs_match_the_planner_query
+ok  test_error_dataset_stride_shrinks_it
+ok  test_error_model_accepts_leading_batch_dims
+ok  test_error_model_output_is_non_negative_and_shaped
+ok  test_training_runs_and_predictions_vary
+
+7 tests passed
+
+test_logged_training.py
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.912s
+
+OK
+
+test_observed_log.py
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.110s
+
+OK
+
+test_perturb.py
+ok  test_bias_is_constant_within_a_class
+ok  test_bias_is_fixed_across_calls
+ok  test_bias_shifts_classes_differently
+ok  test_reward_and_step_delegate_unchanged
+ok  test_score_driven_pool_does_change
+ok  test_state_dim_and_item_counts_are_mirrored
+ok  test_uniform_pool_is_immune_to_the_score_corruption
+ok  test_zero_noise_is_the_identity
+
+8 tests passed
+
+test_pilot_analysis.py
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 1.128s
+
+OK
+
+test_pilot_manifest.py
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.157s
+
+OK
+
+test_planning.py
+ok  test_all_planners_spend_model_budget
+ok  test_cem_and_shooting_agree_on_validity
+ok  test_cem_sampler_never_repeats_items
+ok  test_counting_model_counts_slate_evaluations
+ok  test_gate3_variants_default_to_no_penalty
+ok  test_gate3_variants_wire_the_adjust_hook_into_every_planner
+ok  test_lookahead_reduces_to_pool_argmax_for_any_proposal
+ok  test_lookahead_zero_is_pool_argmax
+ok  test_mcts_depth0_reduces_to_the_prior_argmax
+ok  test_mcts_the_tree_can_disagree_with_its_own_prior
+ok  test_no_repeated_items_in_pool
+ok  test_noisy_tree_still_completes_with_the_real_item_scores
+ok  test_planners_return_valid_slates
+ok  test_proposal_pool_contains_greedy
+ok  test_sid_pool_contains_the_greedy_anchor
+ok  test_sid_proposal_accepts_a_custom_map_and_stays_backward_compatible
+ok  test_sid_proposal_cost_is_reported_correctly
+ok  test_sid_proposal_rejects_a_map_with_too_few_classes
+ok  test_sid_proposal_requires_a_map_or_legacy_dims
+ok  test_sid_proposal_shape_and_validity
+
+20 tests passed
+
+test_purity_metrics.py
+ok  test_summarize_row_rejects_a_missing_planner
+ok  test_summarize_row_reports_both_baselines
+ok  test_the_two_baselines_disagree_exactly_when_the_prior_is_bad
+
+3 tests passed
+
+test_sid_map.py
+ok  test_items_by_coarse_is_a_partition
+ok  test_learned_is_deterministic_given_seed
+ok  test_learned_recovers_planted_cluster_structure
+ok  test_noisy_is_a_controlled_departure_from_oracle
+ok  test_random_tree_preserves_class_sizes
+ok  test_uniform_matches_the_legacy_layout
+ok  test_uniform_rejects_inconsistent_dimensions
+ok  test_unknown_kind_is_rejected
+
+8 tests passed
+
+test_warm_start.py
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.103s
+
+OK
+
+test_world_model.py
+ok  test_ensemble_disagreement_is_zero_for_identical_models
+ok  test_neural_model_matches_simulator_when_fitted
+ok  test_pairwise_head_can_express_the_environment_diversity_penalty
+ok  test_pairwise_off_reproduces_the_unary_only_model
+ok  test_pairwise_term_is_symmetric_in_item_identity
+ok  test_shapes_and_history_encoding
+ok  test_step_latent_moves_state
+ok  test_unary_part_is_decomposable_into_item_scores
+
+8 tests passed
+

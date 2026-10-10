@@ -1,0 +1,20 @@
+{
+  "L0_s1_w0": {
+    "tied_score_rows": 4,
+    "rows": 2560,
+    "mean_tie_adjustment": 7.048202185645347e-08,
+    "max_abs_tie_adjustment": 0.00011721770405770382
+  },
+  "L1_s1_w100": {
+    "tied_score_rows": 2,
+    "rows": 2560,
+    "mean_tie_adjustment": 7.901238136421435e-09,
+    "max_abs_tie_adjustment": 3.561668536133933e-05
+  },
+  "U1_s1_w100": {
+    "tied_score_rows": 5,
+    "rows": 2560,
+    "mean_tie_adjustment": -1.8639992240953445e-08,
+    "max_abs_tie_adjustment": 2.665082564046184e-05
+  }
+}

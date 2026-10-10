@@ -1,0 +1,279 @@
+{
+  "models": [
+    {
+      "arm": "L0_s1_w0",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.18619491016864775,
+      "loss_at_epoch32": 0.22704210742314657,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L0_s2_w0",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.18219330779711407,
+      "loss_at_epoch32": 0.2686963725090027,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L0_s3_w0",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.20934581915537517,
+      "loss_at_epoch32": 0.2665385745366414,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L0_s4_w0",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.19998697233200075,
+      "loss_at_epoch32": 0.27664333454767864,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L0_s5_w0",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.18320421115557353,
+      "loss_at_epoch32": 0.2359224138657252,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s1_w1",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.19534604616959889,
+      "loss_at_epoch32": 0.24111470647652944,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s1_w10",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.2543546923001607,
+      "loss_at_epoch32": 0.3749693601926168,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s1_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.43749677642186485,
+      "loss_at_epoch32": 0.8314427987734476,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s2_w1",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.21204098804791768,
+      "loss_at_epoch32": 0.2838723696867625,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s2_w10",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.3100607670148214,
+      "loss_at_epoch32": 0.44709022823969524,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s2_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.4878072412808736,
+      "loss_at_epoch32": 0.9493683010737102,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s3_w1",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.2230011404355367,
+      "loss_at_epoch32": 0.29020758597056073,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s3_w10",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.36165443348884585,
+      "loss_at_epoch32": 0.42825945965449014,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s3_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.6550577306747436,
+      "loss_at_epoch32": 1.4105245161056519,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s4_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.4323021291097005,
+      "loss_at_epoch32": 0.8047366046905517,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "L1_s5_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.44967114011446635,
+      "loss_at_epoch32": 0.8014026668866475,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s1_w1",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.19781272494792937,
+      "loss_at_epoch32": 0.24734224685033163,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s1_w10",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.24335168941815694,
+      "loss_at_epoch32": 0.3512500967979431,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s1_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.4244547919432322,
+      "loss_at_epoch32": 0.7959522587458293,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s2_w1",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.20722859605153401,
+      "loss_at_epoch32": 0.2763196365038554,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s2_w10",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.31216271956761676,
+      "loss_at_epoch32": 0.4450480090777079,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s2_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.5199559636116028,
+      "loss_at_epoch32": 1.0096660537719726,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s3_w1",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.2237871146996816,
+      "loss_at_epoch32": 0.2921641149520874,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s3_w10",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.3546033577919006,
+      "loss_at_epoch32": 0.42717633040746056,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s3_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.5168396178881327,
+      "loss_at_epoch32": 1.264755007425944,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s4_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.3932712029616038,
+      "loss_at_epoch32": 0.71001442527771,
+      "n_decisions": 5600
+    },
+    {
+      "arm": "U1_s5_w100",
+      "checkpoint_valid": true,
+      "epochs": 40,
+      "final_loss": 0.3983870712121328,
+      "loss_at_epoch32": 0.6660730805397034,
+      "n_decisions": 5600
+    }
+  ],
+  "n_models": 27,
+  "n_tests": 103,
+  "test_files": [
+    {
+      "file": "test_conservative.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_env.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_error_model.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_logged_training.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_observed_log.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_perturb.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_pilot_analysis.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_pilot_manifest.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_planning.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_purity_metrics.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_sid_map.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_warm_start.py",
+      "exit_code": 0
+    },
+    {
+      "file": "test_world_model.py",
+      "exit_code": 0
+    }
+  ],
+  "all_runs_exit0": true,
+  "source_files_match": true,
+  "total_decisions": 151200
+}

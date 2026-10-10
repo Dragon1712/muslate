@@ -1,0 +1,1290 @@
+{
+  "selection": {
+    "L0": 0,
+    "L1": 100,
+    "U1": 100
+  },
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "n_complete_results": 21,
+  "diagnostics": {
+    "L0": {
+      "logged_spearman": 0.2758286103636966,
+      "reward_mae": 0.2846451296573682,
+      "train_seconds": 6.239098203989367
+    },
+    "L1": {
+      "logged_spearman": 0.911376692229806,
+      "reward_mae": 0.13995801409741607,
+      "train_seconds": 6.302387561649084
+    },
+    "U1": {
+      "logged_spearman": 0.9164067552860699,
+      "reward_mae": 0.13843899962187053,
+      "train_seconds": 6.322969409947594
+    }
+  },
+  "protocols": {
+    "full_episode": {
+      "rows": {
+        "L0": {
+          "reactive": {
+            "mean": -27.975167177159705,
+            "ci95": [
+              -38.46201787734583,
+              -21.005706463178253
+            ],
+            "seed_means": [
+              -20.98416813151939,
+              -38.605563045823615,
+              -24.335770354136116
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 0.24799526387747997,
+            "slate_evals_per_decision": 0.0,
+            "score_calls_per_decision": 1.0,
+            "closed_loop_spearman": 0.3222410450886272
+          },
+          "flat_uniform": {
+            "mean": -7.929690705399615,
+            "ci95": [
+              -8.29640728332208,
+              -7.595711077477017
+            ],
+            "seed_means": [
+              -7.7660575884936325,
+              -7.859700298616223,
+              -8.163314229088991
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 36.599334373507496,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.13621458348958726
+          },
+          "flat_policy": {
+            "mean": -13.913989103561017,
+            "ci95": [
+              -16.391522316130082,
+              -11.813272275573382
+            ],
+            "seed_means": [
+              -11.752390747534045,
+              -16.46736534298018,
+              -13.522211220168831
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 40.46869318359919,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.22809281325783148
+          },
+          "sid_flat": {
+            "mean": -8.428182201661691,
+            "ci95": [
+              -9.045818949756166,
+              -7.819721310414135
+            ],
+            "seed_means": [
+              -7.810736215110339,
+              -8.70962845460065,
+              -8.764181935274083
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 91.08424389899785,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.10389915841646043
+          },
+          "sid_hier": {
+            "mean": -10.55774759877474,
+            "ci95": [
+              -11.191767466947507,
+              -9.88867629991589
+            ],
+            "seed_means": [
+              -9.944943144308944,
+              -10.948900466776669,
+              -10.779399185238603
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 88.05536959165086,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.17420255037625942
+          }
+        },
+        "L1": {
+          "reactive": {
+            "mean": -17.425451759219772,
+            "ci95": [
+              -18.30014891942832,
+              -16.53627868785794
+            ],
+            "seed_means": [
+              -16.504389336369794,
+              -18.23723340674477,
+              -17.534732534544762
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 0.25170564573879045,
+            "slate_evals_per_decision": 0.0,
+            "score_calls_per_decision": 1.0,
+            "closed_loop_spearman": 0.8701448989349735
+          },
+          "flat_uniform": {
+            "mean": -3.217233461405229,
+            "ci95": [
+              -4.026166010170259,
+              -2.494747547273868
+            ],
+            "seed_means": [
+              -2.467871403866091,
+              -3.1229204559963977,
+              -4.060908524353199
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 36.89089295852076,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.8958934379609492
+          },
+          "flat_policy": {
+            "mean": -5.489505792448058,
+            "ci95": [
+              -7.269363237418466,
+              -4.215626058775954
+            ],
+            "seed_means": [
+              -4.175186270403833,
+              -4.980115348248922,
+              -7.313215758691419
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 40.37103021886045,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.8954874840621017
+          },
+          "sid_flat": {
+            "mean": -2.4752973192381944,
+            "ci95": [
+              -3.397795460356448,
+              -1.793351643474988
+            ],
+            "seed_means": [
+              -1.7755239075778548,
+              -2.2080808699590087,
+              -3.44228718017772
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 91.28949589843008,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.8927417435435886
+          },
+          "sid_hier": {
+            "mean": -2.7429573205076854,
+            "ci95": [
+              -3.9371512091860787,
+              -1.9231495577140818
+            ],
+            "seed_means": [
+              -1.9795067390826424,
+              -2.2305333573434085,
+              -4.018831865097006
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 88.82024957129033,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.891324533113328
+          }
+        },
+        "U1": {
+          "reactive": {
+            "mean": -18.091741602872776,
+            "ci95": [
+              -21.17821798256999,
+              -15.686910283970592
+            ],
+            "seed_means": [
+              -15.585912182869347,
+              -17.464787705583888,
+              -21.224524920165095
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 0.2513555853511207,
+            "slate_evals_per_decision": 0.0,
+            "score_calls_per_decision": 1.0,
+            "closed_loop_spearman": 0.8937322995574891
+          },
+          "flat_uniform": {
+            "mean": -3.174096639494252,
+            "ci95": [
+              -3.625408511076803,
+              -2.7421294607816815
+            ],
+            "seed_means": [
+              -2.7278962088419867,
+              -3.6445541033873656,
+              -3.1498396062534044
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 36.93277981268087,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9006722886822173
+          },
+          "flat_policy": {
+            "mean": -5.216248403714646,
+            "ci95": [
+              -5.92414539622849,
+              -4.456825519897395
+            ],
+            "seed_means": [
+              -4.424382398808413,
+              -5.273251646598977,
+              -5.951111165736549
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 40.546802876148526,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9009525035000877
+          },
+          "sid_flat": {
+            "mean": -2.6491242965865456,
+            "ci95": [
+              -3.2852506950068783,
+              -1.6917526726231933
+            ],
+            "seed_means": [
+              -1.6668558307709316,
+              -3.21609665524693,
+              -3.064420403741775
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 91.67119821844001,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9039470033625842
+          },
+          "sid_hier": {
+            "mean": -2.75226609975338,
+            "ci95": [
+              -3.414593515313378,
+              -1.9178206976297307
+            ],
+            "seed_means": [
+              -1.8760050696838952,
+              -3.4161316758641895,
+              -2.9646615537120544
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 88.46398850922317,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.900546473036826
+          }
+        }
+      },
+      "comparisons": {
+        "L0:sid_hier-flat_uniform": {
+          "mean": -2.628056893375124,
+          "ci95": [
+            -3.3343244632028486,
+            -1.9586989624963795
+          ],
+          "seed_means": [
+            -2.178885555815313,
+            -3.0892001681604464,
+            -2.616084956149613
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L0:sid_hier-flat_policy": {
+          "mean": 3.356241504786279,
+          "ci95": [
+            1.6483814576436835,
+            5.4366026757165296
+          ],
+          "seed_means": [
+            1.807447603225099,
+            5.518464876203511,
+            2.742812034930226
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L0:sid_hier-sid_flat": {
+          "mean": -2.129565397113049,
+          "ci95": [
+            -2.5979956446609282,
+            -1.6757306406961592
+          ],
+          "seed_means": [
+            -2.1342069291986068,
+            -2.23927201217602,
+            -2.01521724996452
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1:sid_hier-flat_uniform": {
+          "mean": 0.4742761408975431,
+          "ci95": [
+            -0.02223913570098265,
+            0.9217007468866469
+          ],
+          "seed_means": [
+            0.4883646647834486,
+            0.8923870986529894,
+            0.042076659256191584
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1:sid_hier-flat_policy": {
+          "mean": 2.746548471940372,
+          "ci95": [
+            2.1863794897482163,
+            3.327156886337737
+          ],
+          "seed_means": [
+            2.1956795313211908,
+            2.7495819909055133,
+            3.2943838935944116
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1:sid_hier-sid_flat": {
+          "mean": -0.26766000126949135,
+          "ci95": [
+            -0.6952913533358241,
+            0.07391484768858039
+          ],
+          "seed_means": [
+            -0.20398283150478774,
+            -0.022452487384400047,
+            -0.5765446849192862
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1:sid_hier-flat_uniform": {
+          "mean": 0.4218305397408722,
+          "ci95": [
+            0.03317700334580555,
+            0.8495134424845397
+          ],
+          "seed_means": [
+            0.8518911391580911,
+            0.22842242752317576,
+            0.18517805254134967
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1:sid_hier-flat_policy": {
+          "mean": 2.4639823039612665,
+          "ci95": [
+            1.8403215092606158,
+            3.0607618117700763
+          ],
+          "seed_means": [
+            2.548377329124518,
+            1.8571199707347867,
+            2.9864496120244945
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1:sid_hier-sid_flat": {
+          "mean": -0.10314180316683463,
+          "ci95": [
+            -0.38305223400488464,
+            0.19943940137352997
+          ],
+          "seed_means": [
+            -0.20914923891296375,
+            -0.20003502061726036,
+            0.09975885002972015
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:reactive": {
+          "mean": 10.54971541793993,
+          "ci95": [
+            4.540344952860132,
+            20.22363769628374
+          ],
+          "seed_means": [
+            4.479778795149596,
+            20.36832963907884,
+            6.801037819591357
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:flat_uniform": {
+          "mean": 4.712457243994387,
+          "ci95": [
+            4.042590935479238,
+            5.31365586086114
+          ],
+          "seed_means": [
+            5.298186184627542,
+            4.736779842619825,
+            4.1024057047357925
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:flat_policy": {
+          "mean": 8.42448331111296,
+          "ci95": [
+            6.204275517847952,
+            11.392859289094677
+          ],
+          "seed_means": [
+            7.577204477130211,
+            11.487249994731261,
+            6.2089954614774125
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:sid_flat": {
+          "mean": 5.952884882423497,
+          "ci95": [
+            5.227754677901157,
+            6.61521591682209
+          ],
+          "seed_means": [
+            6.035212307532484,
+            6.501547584641642,
+            5.321894755096364
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:sid_hier": {
+          "mean": 7.814790278267054,
+          "ci95": [
+            6.707150741295481,
+            8.732648098145743
+          ],
+          "seed_means": [
+            7.965436405226303,
+            8.71836710943326,
+            6.760567320141598
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:reactive": {
+          "mean": -0.6662898436530017,
+          "ci95": [
+            -3.6484032276140734,
+            1.215019065411939
+          ],
+          "seed_means": [
+            0.9184771535004453,
+            0.7724457011608844,
+            -3.6897923856203354
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:flat_uniform": {
+          "mean": 0.04313682191097678,
+          "ci95": [
+            -0.5783488936644501,
+            0.8759628556834284
+          ],
+          "seed_means": [
+            -0.26002480497589553,
+            -0.521633647390968,
+            0.9110689180997937
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:flat_policy": {
+          "mean": 0.27325738873341127,
+          "ci95": [
+            -0.44937593626346073,
+            1.2881833325659853
+          ],
+          "seed_means": [
+            -0.24919612840458086,
+            -0.2931362983500546,
+            1.3621045929548692
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:sid_flat": {
+          "mean": -0.17382697734835087,
+          "ci95": [
+            -0.9558823439169193,
+            0.43637476666569397
+          ],
+          "seed_means": [
+            0.108668076806923,
+            -1.0080157852879212,
+            0.3778667764359456
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:sid_hier": {
+          "mean": -0.009308779245694196,
+          "ci95": [
+            -1.1156505893148827,
+            1.0188905988747738
+          ],
+          "seed_means": [
+            0.10350166939874698,
+            -1.1855983185207815,
+            1.054170311384952
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        }
+      }
+    },
+    "common_prefix": {
+      "rows": {
+        "L0": {
+          "reactive": {
+            "mean": -23.109824880478005,
+            "ci95": [
+              -27.65196345497392,
+              -18.00914723700147
+            ],
+            "seed_means": [
+              -23.509955830281605,
+              -27.921492420787132,
+              -17.898026390365295
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 0.24868249246436688,
+            "slate_evals_per_decision": 0.0,
+            "score_calls_per_decision": 1.0,
+            "closed_loop_spearman": 0.3195767477520272
+          },
+          "flat_uniform": {
+            "mean": -9.411014826311087,
+            "ci95": [
+              -9.90432401152896,
+              -8.86257306407671
+            ],
+            "seed_means": [
+              -9.698255615574285,
+              -8.909742097838393,
+              -9.625046765520583
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 36.56179051742785,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.14371324699784163
+          },
+          "flat_policy": {
+            "mean": -12.844868262528964,
+            "ci95": [
+              -13.663091429726672,
+              -12.001258921307121
+            ],
+            "seed_means": [
+              -13.179256644738093,
+              -13.355977909715904,
+              -11.999370233132895
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 40.34065060809047,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.22611827795694894
+          },
+          "sid_flat": {
+            "mean": -9.663335867132307,
+            "ci95": [
+              -10.241021226162946,
+              -9.044855517455176
+            ],
+            "seed_means": [
+              -10.186684290334687,
+              -9.198129850700301,
+              -9.605193460361932
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 91.19149698591274,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.11623798928306543
+          },
+          "sid_hier": {
+            "mean": -10.692368348334142,
+            "ci95": [
+              -11.12035278662322,
+              -10.252178574972097
+            ],
+            "seed_means": [
+              -10.68334837363884,
+              -10.705738368784221,
+              -10.688018302579366
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 88.21039886744177,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.19470243631090778
+          }
+        },
+        "L1": {
+          "reactive": {
+            "mean": -15.517923297126117,
+            "ci95": [
+              -16.499936898744444,
+              -14.408280396448276
+            ],
+            "seed_means": [
+              -16.073735995008544,
+              -14.434841125163594,
+              -16.045192771206217
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 0.2526227772856752,
+            "slate_evals_per_decision": 0.0,
+            "score_calls_per_decision": 1.0,
+            "closed_loop_spearman": 0.9166417660441512
+          },
+          "flat_uniform": {
+            "mean": -6.044825665754803,
+            "ci95": [
+              -6.5139160359258526,
+              -5.531162869577549
+            ],
+            "seed_means": [
+              -6.199143393907906,
+              -5.532637771084823,
+              -6.402695832271678
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 36.8462689841787,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9484243272748487
+          },
+          "flat_policy": {
+            "mean": -7.684734240315211,
+            "ci95": [
+              -8.524406269559693,
+              -6.995227526169238
+            ],
+            "seed_means": [
+              -7.500197388609079,
+              -7.009708847604495,
+              -8.54429648473206
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 40.382255581466275,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9476777419435486
+          },
+          "sid_flat": {
+            "mean": -5.684382247394283,
+            "ci95": [
+              -6.290260211129601,
+              -5.1590291930005305
+            ],
+            "seed_means": [
+              -5.592072235537287,
+              -5.193830896187576,
+              -6.267243610457987
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 91.48426509345882,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9466642853571341
+          },
+          "sid_hier": {
+            "mean": -5.916366484400126,
+            "ci95": [
+              -6.524565342963738,
+              -5.393886277632986
+            ],
+            "seed_means": [
+              -5.73588644810281,
+              -5.463316893027976,
+              -6.549896112069593
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 88.8899839315046,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9490182983741261
+          }
+        },
+        "U1": {
+          "reactive": {
+            "mean": -15.420430006968266,
+            "ci95": [
+              -15.923733007645756,
+              -14.916691870642646
+            ],
+            "seed_means": [
+              -15.460998411510783,
+              -15.256524860297034,
+              -15.54376674909698
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 0.25135178325904745,
+            "slate_evals_per_decision": 0.0,
+            "score_calls_per_decision": 1.0,
+            "closed_loop_spearman": 0.9357420664683286
+          },
+          "flat_uniform": {
+            "mean": -5.854698705212283,
+            "ci95": [
+              -6.163219678661693,
+              -5.5330839837509025
+            ],
+            "seed_means": [
+              -6.003608841687922,
+              -5.876966237192903,
+              -5.68352103675603
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 36.95555249384294,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9536623998933308
+          },
+          "flat_policy": {
+            "mean": -7.7665449146556265,
+            "ci95": [
+              -8.089084653922734,
+              -7.421072773293955
+            ],
+            "seed_means": [
+              -7.529543607494311,
+              -7.969051536097999,
+              -7.801039600374572
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 40.58443504036404,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9524739764327443
+          },
+          "sid_flat": {
+            "mean": -5.376827900239245,
+            "ci95": [
+              -5.653904751381072,
+              -5.104985363074468
+            ],
+            "seed_means": [
+              -5.424447493873476,
+              -5.404493808880583,
+              -5.301542397963676
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 91.49607871788452,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.953591825212297
+          },
+          "sid_hier": {
+            "mean": -5.57240578952332,
+            "ci95": [
+              -5.879845093406041,
+              -5.258691019504293
+            ],
+            "seed_means": [
+              -5.510953097885346,
+              -5.744853700203912,
+              -5.461410570480703
+            ],
+            "n_seeds": 3,
+            "n_users": 16,
+            "note": "exploratory three-seed interval",
+            "latency_ms": 88.4382010922612,
+            "slate_evals_per_decision": 6656.0,
+            "score_calls_per_decision": 13.0,
+            "closed_loop_spearman": 0.9564964790786439
+          }
+        }
+      },
+      "comparisons": {
+        "L0:sid_hier-flat_uniform": {
+          "mean": -1.281353522023057,
+          "ci95": [
+            -1.8595098413166073,
+            -0.6952828770274836
+          ],
+          "seed_means": [
+            -0.9850927580645567,
+            -1.7959962709458295,
+            -1.0629715370587847
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L0:sid_hier-flat_policy": {
+          "mean": 2.152499914194822,
+          "ci95": [
+            1.2246049533635066,
+            2.9750971032577453
+          ],
+          "seed_means": [
+            2.495908271099253,
+            2.650239540931684,
+            1.3113519305535286
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L0:sid_hier-sid_flat": {
+          "mean": -1.0290324812018357,
+          "ci95": [
+            -1.6114767520125937,
+            -0.39104527574623604
+          ],
+          "seed_means": [
+            -0.49666408330415407,
+            -1.507608518083919,
+            -1.082824842217434
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1:sid_hier-flat_uniform": {
+          "mean": 0.12845918135467616,
+          "ci95": [
+            -0.20694004153107665,
+            0.4810761656537728
+          ],
+          "seed_means": [
+            0.4632569458050959,
+            0.06932087805684753,
+            -0.14720027979791497
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1:sid_hier-flat_policy": {
+          "mean": 1.7683677559150854,
+          "ci95": [
+            1.475658684229525,
+            2.0916549305047503
+          ],
+          "seed_means": [
+            1.7643109405062694,
+            1.5463919545765186,
+            1.9944003726624677
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1:sid_hier-sid_flat": {
+          "mean": -0.2319842370058425,
+          "ci95": [
+            -0.4769685531104513,
+            -0.01627196199815577
+          ],
+          "seed_means": [
+            -0.14381421256552243,
+            -0.26948599684039953,
+            -0.2826525016116056
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1:sid_hier-flat_uniform": {
+          "mean": 0.2822929156889645,
+          "ci95": [
+            0.03975787173219415,
+            0.5334851274510418
+          ],
+          "seed_means": [
+            0.492655743802576,
+            0.13211253698899106,
+            0.22211046627532627
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1:sid_hier-flat_policy": {
+          "mean": 2.194139125132307,
+          "ci95": [
+            1.9301665107273804,
+            2.4946138630677455
+          ],
+          "seed_means": [
+            2.0185905096089654,
+            2.2241978358940875,
+            2.3396290298938673
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1:sid_hier-sid_flat": {
+          "mean": -0.19557788928407507,
+          "ci95": [
+            -0.3887954705119066,
+            -0.01372627245865152
+          ],
+          "seed_means": [
+            -0.08650560401186927,
+            -0.3403598913233287,
+            -0.15986817251702728
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:reactive": {
+          "mean": 7.591901583351891,
+          "ci95": [
+            2.031377601484977,
+            13.203695144368895
+          ],
+          "seed_means": [
+            7.436219835273061,
+            13.486651295623538,
+            1.852833619159076
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:flat_uniform": {
+          "mean": 3.3661891605562833,
+          "ci95": [
+            3.056246462228654,
+            3.6743681056104767
+          ],
+          "seed_means": [
+            3.4991122216663784,
+            3.3771043267535683,
+            3.2223509332489035
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:flat_policy": {
+          "mean": 5.160134022213753,
+          "ci95": [
+            3.5514368838637065,
+            6.478162237347547
+          ],
+          "seed_means": [
+            5.679059256129014,
+            6.346269062111411,
+            3.4550737484008343
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:sid_flat": {
+          "mean": 3.978953619738023,
+          "ci95": [
+            3.287314679390158,
+            4.630018763768572
+          ],
+          "seed_means": [
+            4.5946120547974,
+            4.004298954512726,
+            3.3379498499039446
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "L1-L0:sid_hier": {
+          "mean": 4.776001863934017,
+          "ci95": [
+            4.110471419309459,
+            5.339647242653521
+          ],
+          "seed_means": [
+            4.947461925536031,
+            5.242421475756245,
+            4.1381221905097725
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:reactive": {
+          "mean": 0.09749329015785364,
+          "ci95": [
+            -0.9168842377798959,
+            0.9525332500908342
+          ],
+          "seed_means": [
+            0.612737583497762,
+            -0.8216837351334402,
+            0.5014260221092391
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:flat_uniform": {
+          "mean": 0.19012696054251735,
+          "ci95": [
+            -0.3239587293608001,
+            0.7072763344313469
+          ],
+          "seed_means": [
+            0.19553455221998384,
+            -0.34432846610807943,
+            0.7191747955156478
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:flat_policy": {
+          "mean": -0.08181067434041604,
+          "ci95": [
+            -0.9010906806057781,
+            0.7308456245855078
+          ],
+          "seed_means": [
+            -0.029346218885232034,
+            -0.959342688493505,
+            0.7432568843574888
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:sid_flat": {
+          "mean": 0.3075543471550382,
+          "ci95": [
+            -0.18517557866520867,
+            0.9383224709995172
+          ],
+          "seed_means": [
+            0.16762474166381075,
+            -0.21066291269300674,
+            0.9657012124943107
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        },
+        "U1-L1:sid_hier": {
+          "mean": 0.34396069487680564,
+          "ci95": [
+            -0.2665598531366061,
+            1.0511251663292316
+          ],
+          "seed_means": [
+            0.2249333502174639,
+            -0.28153680717593593,
+            1.088485541588889
+          ],
+          "n_seeds": 3,
+          "n_users": 16,
+          "note": "exploratory three-seed interval"
+        }
+      }
+    }
+  },
+  "selection_rule": "validation common-prefix sid_hier mean return, lower weight tie break",
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20261008,
+    "unit": "seed then paired user"
+  },
+  "source": {
+    "muslate/__init__.py": "381f9922b442e91535c13c6d8e171f8e5c4e49d1431d8b39f801dafa8f6cf701",
+    "muslate/config.py": "a14a12aaa1b169cc21a8e1ef18c61907f4fc6d7d129c5acf53f1d82aac4d1ead",
+    "muslate/env/__init__.py": "524f3c33d572644b84bd7eb99b408dda8329faa2708f03f364c2cf876e3dcdb8",
+    "muslate/env/catalog.py": "c58b3a2a51befea00a1649cb676a7c1f7dd6ea6324423f6a9a2620eb12021401",
+    "muslate/env/logger.py": "2e69a616b6098c1e0ae953c797545a89f2aea1947704adc1e6c20f89607d1656",
+    "muslate/env/simulator.py": "8843808fc88ab725c45ded68002b1e7dfb10e465811a70b669ec75a476111ce1",
+    "muslate/eval/__init__.py": "599a8e8e5996604c73dfd4456081ca1d17d0febb0750599c21cc399717d8dc93",
+    "muslate/eval/calibration.py": "203e8dc2a5dd7f13446b51c7eff9a58273dfe16ee3d3c7c39a2f0cccd343fa7d",
+    "muslate/eval/rollout.py": "7507f75099267adefa04ab7d5c970e5aa343bdef6f99f4d2e21eea897554211d",
+    "muslate/model/__init__.py": "aaca6980c61e19e0d0ad3c46b279d716d37ed7bab378325524e7e16bed5e2240",
+    "muslate/model/checkpoint.py": "4d763b8b28593e606de258ee29904f89566b16c61f00a6db8561b50b41fff8b3",
+    "muslate/model/error_model.py": "7cf0fad93d4f8498f2a9db8bbd472449b8c793be0f745865961130472456b6ea",
+    "muslate/model/neural_model.py": "693e3ae3d4acf1e4f36bc8ff417a4bbb19917e0f7c4f10b85098d0326833d619",
+    "muslate/model/train.py": "7eb51b16d4e4c5ce4aeba44821b172dc2144b56e2f610f9e51a7704e3ff17109",
+    "muslate/model/world_model.py": "c906df58cfc155299f21e040812b8bcfac5172b3714347a520ce8634642097bc",
+    "muslate/planning/__init__.py": "aae44f828f0fb6c52150f49e86d8f6b26cb7a2df7c457d2969ac9ec7d98aa50f",
+    "muslate/planning/abstractions.py": "9f839f2aa24439b0288dc5df6929a4bbb1f8399f81f570dabec165e04c442e8f",
+    "muslate/planning/conservative.py": "85cbd2dd2f41fb9ed3ea41b909d7f4311add49098ffb4aa0a12a77b59b510111",
+    "muslate/planning/controlled.py": "e1d886a43369b8e53a39fab76d667e3e08a98c5f7f9104dbbb59eafaecc4da9f",
+    "muslate/planning/latent_model.py": "d9b3f9ee6173b233bbe8b837509dd669ca28707f0efecc390daa3d10ee34e5c6",
+    "muslate/planning/perturb.py": "6a5c23fdd84bf569782d51565317985cad5012671f08865fd2930740dac9caf4",
+    "muslate/planning/proposal.py": "55032c6cff2216c9a872611d3826ee0570f0f8dc4ec0b390257a4c989b79fded",
+    "muslate/planning/search.py": "f4a8bd001972a8a27f533b4bc54d738e7fcb47a1fa504d9b600bc44d292aef1e",
+    "muslate/planning/sid_map.py": "ee18f9da4e2101751024be512765fff7849bc03cee498551f1c2949f6855f363",
+    "scripts/run_gate3.py": "cd9cdef80d1db0c776786d37bb69f1a4fd605afdb5edc7810760e4abbdd23d0f",
+    "scripts/run_logged_pilot.py": "ccec6e661569d6ca2cb228da9bf49f4f70b402e2fbdaf76fb547576727a25694"
+  },
+  "contract": {
+    "model": {
+      "latent_dim": 64,
+      "slate_emb_dim": 64,
+      "hidden_dim": 128,
+      "n_ensemble": 1,
+      "oracle_state": false,
+      "lr": 0.003,
+      "batch_size": 512,
+      "epochs": 40,
+      "rollout_depth": 3,
+      "pairwise": true,
+      "w_reward": 1.0,
+      "w_multistep": 1.0,
+      "w_state": 1.0
+    },
+    "environment": {
+      "catalog": {
+        "n_coarse": 10,
+        "n_fine": 20,
+        "dim": 32,
+        "coarse_weight": 1.0,
+        "fine_weight": 0.5,
+        "seed": 0
+      },
+      "slate_size": 5,
+      "pos_discount": 0.8,
+      "sat_decay": 0.7,
+      "sat_penalty": 0.5,
+      "pref_lr": 0.3,
+      "long_term_strength": 3.0,
+      "div_penalty": 0.8,
+      "reward_noise": 0.02,
+      "horizon": 20,
+      "gamma": 0.95,
+      "n_users": 64,
+      "seed": 0
+    },
+    "log": {
+      "n_episodes": 3000,
+      "epsilon": 0.25,
+      "temperature": 1.0,
+      "item_feedback_noise": 0.02
+    },
+    "holdout_episodes": 128,
+    "users": 16,
+    "warmup": 5,
+    "budget": 512,
+    "depth": 2,
+    "threads": 4,
+    "protocol_version": 1,
+    "feedback": "synthetic continuous unary response, noise std .02",
+    "budget_note": "nominal Gate3 proposal allocation; actual calls reported; no hard total budget claim"
+  },
+  "limitations": [
+    "synthetic continuous served-item feedback",
+    "fixed catalog/shared user population",
+    "nominal proposal budget; no hard total-operation budget",
+    "shared GPU latency is descriptive"
+  ]
+}
