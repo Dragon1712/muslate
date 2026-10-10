@@ -1,0 +1,32 @@
+{
+  "reactive": {
+    "reward_only_rows": 0,
+    "reward_plus_transition_rows": 0,
+    "total_slate_evals": 0,
+    "score_state_queries": 1
+  },
+  "flat_uniform": {
+    "reward_only_rows": 0,
+    "reward_plus_transition_rows": 6656,
+    "total_slate_evals": 6656,
+    "score_state_queries": 13
+  },
+  "flat_policy": {
+    "reward_only_rows": 0,
+    "reward_plus_transition_rows": 6656,
+    "total_slate_evals": 6656,
+    "score_state_queries": 13
+  },
+  "sid_flat": {
+    "reward_only_rows": 3328,
+    "reward_plus_transition_rows": 3328,
+    "total_slate_evals": 6656,
+    "score_state_queries": 13
+  },
+  "sid_hier": {
+    "reward_only_rows": 4888,
+    "reward_plus_transition_rows": 1768,
+    "total_slate_evals": 6656,
+    "score_state_queries": 13
+  }
+}

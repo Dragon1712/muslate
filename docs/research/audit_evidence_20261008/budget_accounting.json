@@ -1,0 +1,70 @@
+[
+  {
+    "nominal_budget": 32,
+    "slate_evals": {
+      "reactive": 0,
+      "flat_uniform": 416,
+      "flat_policy": 416,
+      "sid_flat": 416,
+      "sid_hier": 468
+    },
+    "score_calls": {
+      "reactive": 1,
+      "flat_uniform": 13,
+      "flat_policy": 13,
+      "sid_flat": 13,
+      "sid_hier": 13
+    }
+  },
+  {
+    "nominal_budget": 256,
+    "slate_evals": {
+      "reactive": 0,
+      "flat_uniform": 3328,
+      "flat_policy": 3328,
+      "sid_flat": 3328,
+      "sid_hier": 3328
+    },
+    "score_calls": {
+      "reactive": 1,
+      "flat_uniform": 13,
+      "flat_policy": 13,
+      "sid_flat": 13,
+      "sid_hier": 13
+    }
+  },
+  {
+    "nominal_budget": 512,
+    "slate_evals": {
+      "reactive": 0,
+      "flat_uniform": 6656,
+      "flat_policy": 6656,
+      "sid_flat": 6656,
+      "sid_hier": 6656
+    },
+    "score_calls": {
+      "reactive": 1,
+      "flat_uniform": 13,
+      "flat_policy": 13,
+      "sid_flat": 13,
+      "sid_hier": 13
+    }
+  },
+  {
+    "nominal_budget": 1024,
+    "slate_evals": {
+      "reactive": 0,
+      "flat_uniform": 13312,
+      "flat_policy": 13312,
+      "sid_flat": 13312,
+      "sid_hier": 12012
+    },
+    "score_calls": {
+      "reactive": 1,
+      "flat_uniform": 13,
+      "flat_policy": 13,
+      "sid_flat": 13,
+      "sid_hier": 13
+    }
+  }
+]

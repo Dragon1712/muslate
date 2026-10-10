@@ -1,0 +1,315 @@
+{
+  "datasets": [
+    {
+      "file": "KuaiRand-Pure.tar.gz",
+      "url": "https://zenodo.org/records/10439422/files/KuaiRand-Pure.tar.gz",
+      "md5": "0820331067a3784d9691136f772b35a7",
+      "bytes": 47432272,
+      "schema": {
+        "log_standard_4_22_to_5_08_pure.csv": {
+          "fields": [
+            "user_id",
+            "video_id",
+            "date",
+            "hourmin",
+            "time_ms",
+            "is_click",
+            "is_like",
+            "is_follow",
+            "is_comment",
+            "is_forward",
+            "is_hate",
+            "long_view",
+            "play_time_ms",
+            "duration_ms",
+            "profile_stay_time",
+            "comment_stay_time",
+            "is_profile_enter",
+            "is_rand",
+            "tab"
+          ],
+          "first_rows": [
+            {
+              "date": "20220422",
+              "is_click": "0",
+              "play_time_ms": "0",
+              "duration_ms": "134156",
+              "is_rand": "0",
+              "tab": "0"
+            },
+            {
+              "date": "20220425",
+              "is_click": "0",
+              "play_time_ms": "1033",
+              "duration_ms": "168241",
+              "is_rand": "0",
+              "tab": "1"
+            },
+            {
+              "date": "20220429",
+              "is_click": "0",
+              "play_time_ms": "0",
+              "duration_ms": "129833",
+              "is_rand": "0",
+              "tab": "0"
+            }
+          ]
+        },
+        "log_standard_4_08_to_4_21_pure.csv": {
+          "fields": [
+            "user_id",
+            "video_id",
+            "date",
+            "hourmin",
+            "time_ms",
+            "is_click",
+            "is_like",
+            "is_follow",
+            "is_comment",
+            "is_forward",
+            "is_hate",
+            "long_view",
+            "play_time_ms",
+            "duration_ms",
+            "profile_stay_time",
+            "comment_stay_time",
+            "is_profile_enter",
+            "is_rand",
+            "tab"
+          ],
+          "first_rows": [
+            {
+              "date": "20220411",
+              "is_click": "0",
+              "play_time_ms": "1385",
+              "duration_ms": "209900",
+              "is_rand": "0",
+              "tab": "1"
+            },
+            {
+              "date": "20220416",
+              "is_click": "0",
+              "play_time_ms": "0",
+              "duration_ms": "65400",
+              "is_rand": "0",
+              "tab": "0"
+            },
+            {
+              "date": "20220420",
+              "is_click": "0",
+              "play_time_ms": "1405",
+              "duration_ms": "170833",
+              "is_rand": "0",
+              "tab": "1"
+            }
+          ]
+        },
+        "log_random_4_22_to_5_08_pure.csv": {
+          "fields": [
+            "user_id",
+            "video_id",
+            "date",
+            "hourmin",
+            "time_ms",
+            "is_click",
+            "is_like",
+            "is_follow",
+            "is_comment",
+            "is_forward",
+            "is_hate",
+            "long_view",
+            "play_time_ms",
+            "duration_ms",
+            "profile_stay_time",
+            "comment_stay_time",
+            "is_profile_enter",
+            "is_rand",
+            "tab"
+          ],
+          "first_rows": [
+            {
+              "date": "20220430",
+              "is_click": "0",
+              "play_time_ms": "863",
+              "duration_ms": "30066",
+              "is_rand": "1",
+              "tab": "1"
+            },
+            {
+              "date": "20220502",
+              "is_click": "0",
+              "play_time_ms": "1190",
+              "duration_ms": "132433",
+              "is_rand": "1",
+              "tab": "1"
+            },
+            {
+              "date": "20220502",
+              "is_click": "0",
+              "play_time_ms": "1528",
+              "duration_ms": "25266",
+              "is_rand": "1",
+              "tab": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "KuaiRand-1K.tar.gz",
+      "url": "https://zenodo.org/records/10439422/files/KuaiRand-1K.tar.gz",
+      "md5": "6b0b9c8222d67fcd4c676218edca3f1f",
+      "bytes": 1135436720,
+      "schema": {
+        "log_standard_4_08_to_4_21_1k.csv": {
+          "fields": [
+            "user_id",
+            "video_id",
+            "date",
+            "hourmin",
+            "time_ms",
+            "is_click",
+            "is_like",
+            "is_follow",
+            "is_comment",
+            "is_forward",
+            "is_hate",
+            "long_view",
+            "play_time_ms",
+            "duration_ms",
+            "profile_stay_time",
+            "comment_stay_time",
+            "is_profile_enter",
+            "is_rand",
+            "tab"
+          ],
+          "first_rows": [
+            {
+              "date": "20220409",
+              "is_click": "0",
+              "play_time_ms": "0",
+              "duration_ms": "70100",
+              "is_rand": "0",
+              "tab": "0"
+            },
+            {
+              "date": "20220409",
+              "is_click": "0",
+              "play_time_ms": "0",
+              "duration_ms": "51422",
+              "is_rand": "0",
+              "tab": "0"
+            },
+            {
+              "date": "20220409",
+              "is_click": "0",
+              "play_time_ms": "0",
+              "duration_ms": "11696",
+              "is_rand": "0",
+              "tab": "0"
+            }
+          ]
+        },
+        "log_standard_4_22_to_5_08_1k.csv": {
+          "fields": [
+            "user_id",
+            "video_id",
+            "date",
+            "hourmin",
+            "time_ms",
+            "is_click",
+            "is_like",
+            "is_follow",
+            "is_comment",
+            "is_forward",
+            "is_hate",
+            "long_view",
+            "play_time_ms",
+            "duration_ms",
+            "profile_stay_time",
+            "comment_stay_time",
+            "is_profile_enter",
+            "is_rand",
+            "tab"
+          ],
+          "first_rows": [
+            {
+              "date": "20220422",
+              "is_click": "0",
+              "play_time_ms": "3925",
+              "duration_ms": "7833",
+              "is_rand": "0",
+              "tab": "1"
+            },
+            {
+              "date": "20220422",
+              "is_click": "0",
+              "play_time_ms": "0",
+              "duration_ms": "106900",
+              "is_rand": "0",
+              "tab": "0"
+            },
+            {
+              "date": "20220422",
+              "is_click": "0",
+              "play_time_ms": "0",
+              "duration_ms": "130533",
+              "is_rand": "0",
+              "tab": "0"
+            }
+          ]
+        },
+        "log_random_4_22_to_5_08_1k.csv": {
+          "fields": [
+            "user_id",
+            "video_id",
+            "date",
+            "hourmin",
+            "time_ms",
+            "is_click",
+            "is_like",
+            "is_follow",
+            "is_comment",
+            "is_forward",
+            "is_hate",
+            "long_view",
+            "play_time_ms",
+            "duration_ms",
+            "profile_stay_time",
+            "comment_stay_time",
+            "is_profile_enter",
+            "is_rand",
+            "tab"
+          ],
+          "first_rows": [
+            {
+              "date": "20220430",
+              "is_click": "0",
+              "play_time_ms": "863",
+              "duration_ms": "30066",
+              "is_rand": "1",
+              "tab": "1"
+            },
+            {
+              "date": "20220502",
+              "is_click": "0",
+              "play_time_ms": "1190",
+              "duration_ms": "132433",
+              "is_rand": "1",
+              "tab": "1"
+            },
+            {
+              "date": "20220502",
+              "is_click": "0",
+              "play_time_ms": "1528",
+              "duration_ms": "25266",
+              "is_rand": "1",
+              "tab": "1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "completed_utc": "2026-10-08T15:17:52Z"
+}

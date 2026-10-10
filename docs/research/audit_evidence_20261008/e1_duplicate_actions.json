@@ -1,0 +1,180 @@
+{
+  "arm": "L1_s1_w100",
+  "user": 0,
+  "protocol": "common_prefix/test",
+  "warmup": 5,
+  "test_prefix_seed": 1003000,
+  "planner_seed": 60001,
+  "budget": 512,
+  "depth": 2,
+  "decisions": 15,
+  "duplicate_decisions": 6,
+  "actions": [
+    {
+      "t": 5,
+      "slate": [
+        125,
+        30,
+        78,
+        11,
+        170
+      ],
+      "unique": true
+    },
+    {
+      "t": 6,
+      "slate": [
+        42,
+        196,
+        87,
+        42,
+        65
+      ],
+      "unique": false
+    },
+    {
+      "t": 7,
+      "slate": [
+        176,
+        136,
+        116,
+        16,
+        151
+      ],
+      "unique": true
+    },
+    {
+      "t": 8,
+      "slate": [
+        24,
+        76,
+        44,
+        199,
+        135
+      ],
+      "unique": true
+    },
+    {
+      "t": 9,
+      "slate": [
+        116,
+        16,
+        36,
+        96,
+        144
+      ],
+      "unique": true
+    },
+    {
+      "t": 10,
+      "slate": [
+        84,
+        61,
+        124,
+        149,
+        44
+      ],
+      "unique": true
+    },
+    {
+      "t": 11,
+      "slate": [
+        14,
+        116,
+        116,
+        54,
+        173
+      ],
+      "unique": false
+    },
+    {
+      "t": 12,
+      "slate": [
+        174,
+        144,
+        44,
+        87,
+        64
+      ],
+      "unique": true
+    },
+    {
+      "t": 13,
+      "slate": [
+        192,
+        54,
+        134,
+        94,
+        34
+      ],
+      "unique": true
+    },
+    {
+      "t": 14,
+      "slate": [
+        34,
+        114,
+        14,
+        114,
+        196
+      ],
+      "unique": false
+    },
+    {
+      "t": 15,
+      "slate": [
+        162,
+        62,
+        24,
+        184,
+        159
+      ],
+      "unique": true
+    },
+    {
+      "t": 16,
+      "slate": [
+        94,
+        56,
+        134,
+        94,
+        142
+      ],
+      "unique": false
+    },
+    {
+      "t": 17,
+      "slate": [
+        159,
+        43,
+        19,
+        119,
+        179
+      ],
+      "unique": true
+    },
+    {
+      "t": 18,
+      "slate": [
+        194,
+        54,
+        114,
+        14,
+        54
+      ],
+      "unique": false
+    },
+    {
+      "t": 19,
+      "slate": [
+        68,
+        162,
+        24,
+        68,
+        159
+      ],
+      "unique": false
+    }
+  ],
+  "scope": "one user, one selected checkpoint; not a prevalence estimate for all experiments"
+}

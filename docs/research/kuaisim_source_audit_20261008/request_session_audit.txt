@@ -1,0 +1,131 @@
+## Request Time Gap
+
+from datetime import datetime as dt
+from tqdm import tqdm
+def get_next_request_gap_distribution(df, limit = -1):
+    same_day_gap = []
+    cross_day_gap = []
+    user_day_list = []
+    current_uid = -1
+    L = len(df) if limit < 0 else limit
+    for i in tqdm(range(L)):
+        row = df.iloc[i]
+        t = dt.fromtimestamp(row['time_ms'] // 1000)
+        if row['user_id'] != current_uid:
+            current_uid = row['user_id']
+            user_day_list = [t]
+        else:
+            diff = t - user_day_list[-1]
+            if diff.seconds > 0:
+                if diff.days > 0:
+                    cross_day_gap.append(diff.seconds / 3600.)
+                else:
+                    same_day_gap.append(diff.seconds / 3600.)
+            user_day_list.append(t)
+    return same_day_gap, cross_day_gap
+
+gap_distribution = get_next_request_gap_distribution(df_rand, limit = 1000000)
+
+plt.figure(figsize = (16,4))
+plt.subplot(1,2,1)
+plt.hist(gap_distribution[0], bins = 100)
+plt.yscale('log')
+plt.xlabel('hour')
+plt.title("Same day request gap")
+plt.subplot(1,2,2)
+plt.hist(gap_distribution[1], bins = 100)
+plt.title("Cross day request gap (mod 1 day)")
+plt.xlabel('hour')
+plt.show()
+
+print(max(RLS), max(NLPU))
+plt.figure(figsize = (16,4))
+plt.subplot(1,2,1)
+plt.hist(RLS, bins = 50)
+plt.xlabel("rec list size")
+plt.ylabel("sample list count")
+plt.title("rec list size distribution")
+plt.yscale('log')
+plt.subplot(1,2,2)
+plt.hist(NLPU, bins = 100)
+plt.xlabel("#request")
+plt.ylabel("sample user count")
+plt.title("#request per user")
+plt.yscale('log')
+plt.show()
+
+# Build user history
+from tqdm import tqdm
+import numpy as np
+users = list(df_rand['user_id'].unique())
+position = np.zeros(len(df_rand), dtype = int)
+session = np.zeros(len(df_rand), dtype = int)
+session_length_list = []
+history_length_list = []
+n_day_list = []
+user_session_length = {}
+for i,uid in tqdm(enumerate(users)):
+    user_data = df_rand[df_rand['user_id'] == uid]
+    dates = user_data['date'].unique()
+    user_session_length[uid] = []
+    history_length_list.append(len(user_data))
+    n_day_list.append(len(dates))
+    for sess_id,D in enumerate(dates):
+        day_session = user_data[user_data['date'] == D]
+        session[day_session.index] = sess_id
+        position[day_session.index] = np.arange(len(day_session))
+        session_length_list.append(len(day_session))
+        user_session_length[uid].append(len(day_session))
+#         print(day_session[['user_id', 'date']])
+#         print(session[day_session.index])
+#         print(position[day_session.index])
+#     break
+    
+
+import matplotlib.pyplot as plt
+import numpy as np
+plt.rcParams.update({'font.size': 16})
+plt.figure(figsize = (16,8))
+
+plt.subplot(2,2,1)
+plt.hist(session_length_list, bins=100)
+plt.xlabel('day session length')
+plt.ylabel('frequency')
+plt.yscale('log')
+
+plt.subplot(2,2,2)
+plt.hist(history_length_list, bins = 50)
+plt.xlabel("user history length")
+plt.ylabel("#user")
+plt.yscale('log')
+
+plt.subplot(2,2,3)
+plt.hist(n_day_list, bins = 30)
+plt.xlabel("number of day sessions")
+plt.ylabel("#user")
+plt.yscale('log')
+plt.show()
+
+# Build user history
+from tqdm import tqdm
+import numpy as np
+
+users = list(df_rand['user_id'].unique())
+position = np.zeros(len(df_rand), dtype = int)
+session = np.zeros(len(df_rand), dtype = int)
+for i,uid in tqdm(enumerate(users)):
+    user_data = df_rand[df_rand['user_id'] == uid]
+    dates = user_data['date'].unique()
+    for sess_id,D in enumerate(dates):
+        day_session = user_data[user_data['date'] == D]
+        session[day_session.index] = sess_id
+        position[day_session.index] = np.arange(len(day_session))
+    
+
+df_rand['position'] = position
+df_rand['session'] = session
+df_rand
+
+output_path = '../dataset/Kuairand_Pure/'
+df_rand.to_csv(output_path + 'log_session_4_08_to_5_08_Pure.csv', index = False)
+# df_rand.to_csv(output_path + 'log_session_4_08_to_5_08_1K.csv', index = False)

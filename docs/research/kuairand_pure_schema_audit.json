@@ -1,0 +1,131 @@
+{
+  "log_random_4_22_to_5_08_pure.csv": {
+    "counts": {
+      "rows": 1186059,
+      "click_0": 977125,
+      "random_1": 1186059,
+      "play_time_zero": 7923,
+      "click_missing": 0,
+      "play_time_missing": 0,
+      "click_1": 208934
+    },
+    "n_users": 27285,
+    "n_videos": 7583,
+    "date_min": "20220422",
+    "date_max": "20220508",
+    "within_user_backwards_rows": 0,
+    "fields": [
+      "user_id",
+      "video_id",
+      "date",
+      "hourmin",
+      "time_ms",
+      "is_click",
+      "is_like",
+      "is_follow",
+      "is_comment",
+      "is_forward",
+      "is_hate",
+      "long_view",
+      "play_time_ms",
+      "duration_ms",
+      "profile_stay_time",
+      "comment_stay_time",
+      "is_profile_enter",
+      "is_rand",
+      "tab"
+    ],
+    "native_group_fields": {
+      "request_id": false,
+      "session_id": false,
+      "position": false,
+      "slate_id": false
+    }
+  },
+  "log_standard_4_08_to_4_21_pure.csv": {
+    "counts": {
+      "rows": 1141112,
+      "click_0": 612267,
+      "random_0": 1141112,
+      "play_time_zero": 158458,
+      "click_missing": 0,
+      "play_time_missing": 0,
+      "click_1": 528845
+    },
+    "n_users": 26210,
+    "n_videos": 7538,
+    "date_min": "20220409",
+    "date_max": "20220421",
+    "within_user_backwards_rows": 23938,
+    "fields": [
+      "user_id",
+      "video_id",
+      "date",
+      "hourmin",
+      "time_ms",
+      "is_click",
+      "is_like",
+      "is_follow",
+      "is_comment",
+      "is_forward",
+      "is_hate",
+      "long_view",
+      "play_time_ms",
+      "duration_ms",
+      "profile_stay_time",
+      "comment_stay_time",
+      "is_profile_enter",
+      "is_rand",
+      "tab"
+    ],
+    "native_group_fields": {
+      "request_id": false,
+      "session_id": false,
+      "position": false,
+      "slate_id": false
+    }
+  },
+  "log_standard_4_22_to_5_08_pure.csv": {
+    "counts": {
+      "rows": 295497,
+      "click_0": 164000,
+      "random_0": 295497,
+      "play_time_zero": 30509,
+      "click_missing": 0,
+      "play_time_missing": 0,
+      "click_1": 131497
+    },
+    "n_users": 25877,
+    "n_videos": 6618,
+    "date_min": "20220422",
+    "date_max": "20220508",
+    "within_user_backwards_rows": 18763,
+    "fields": [
+      "user_id",
+      "video_id",
+      "date",
+      "hourmin",
+      "time_ms",
+      "is_click",
+      "is_like",
+      "is_follow",
+      "is_comment",
+      "is_forward",
+      "is_hate",
+      "long_view",
+      "play_time_ms",
+      "duration_ms",
+      "profile_stay_time",
+      "comment_stay_time",
+      "is_profile_enter",
+      "is_rand",
+      "tab"
+    ],
+    "native_group_fields": {
+      "request_id": false,
+      "session_id": false,
+      "position": false,
+      "slate_id": false
+    }
+  }
+}

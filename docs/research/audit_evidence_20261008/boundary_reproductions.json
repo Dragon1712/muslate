@@ -1,0 +1,130 @@
+{
+  "spearman_constant": {
+    "actual": 1.0,
+    "expected": "undefined (NaN), or explicit constant-vector fallback; cannot be 1"
+  },
+  "spearman_ties": {
+    "actual": 1.0,
+    "average_rank_pearson": 0.8660254037844387
+  },
+  "error_model_tail": {
+    "available_rows": 6,
+    "processed_rows": 4,
+    "batch_rows": [
+      4
+    ]
+  },
+  "error_model_no_upper_bound": {
+    "prediction": 1000.0,
+    "envelope_attribute_present": false
+  },
+  "analysis_mean_consistency": {
+    "accepted_inconsistent_summary": true,
+    "all_saved_returns": [
+      1.0,
+      2.0
+    ],
+    "selected": {
+      "L0": 0,
+      "L1": 1,
+      "U1": 1
+    }
+  },
+  "resume_complete_validation": {
+    "initial_claim": "new",
+    "second_claim": "complete",
+    "model_present": false,
+    "evaluation_stages_present": false
+  },
+  "mcts_revisited_leaf": {
+    "visit1": {
+      "N": [
+        1.0
+      ],
+      "W": [
+        3.0
+      ]
+    },
+    "visit2": {
+      "N": [
+        2.0
+      ],
+      "W": [
+        4.0
+      ]
+    },
+    "expected_visit2_W": [
+      6.0
+    ]
+  },
+  "single_member_uncertainty": {
+    "finite": false,
+    "expected": "0 or explicit validation error for n_ensemble<2"
+  },
+  "reactive_adjust": {
+    "calls": []
+  },
+  "scalar_batch_reward": {
+    "scalar": 2.6942277898856064,
+    "batch": -0.1606809382951493,
+    "difference": 2.8549087281807557,
+    "expected_difference_from_missing_diversity": 2.8549087281807544
+  },
+  "position_discount": {
+    "world_model_weights": [
+      1.0,
+      0.800000011920929
+    ],
+    "config_parameter_present": false,
+    "note": "WorldModel hardcodes SlateEncoder default .8; EnvConfig may differ"
+  },
+  "finite_horizon_counterexample": {
+    "remaining_steps": 1,
+    "chosen_action": [
+      1
+    ],
+    "chosen_immediate_reward": 0.0,
+    "finite_horizon_best_action": [
+      0
+    ],
+    "finite_horizon_best_reward": 1.0,
+    "reason": "planner scores fictitious future rewards beyond episode termination"
+  },
+  "ensemble_coordinate_counterexample": {
+    "individual_correct_rewards": [
+      1.0,
+      1.0
+    ],
+    "expected_prediction_average": 1.0,
+    "mean_latent": [
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "actual_ensemble_reward": [
+      0.0
+    ],
+    "note": "two semantically equivalent predictors represented by opposite latent coordinates"
+  },
+  "actual_world_model_ensemble": {
+    "individual_rewards": [
+      1.0,
+      1.0
+    ],
+    "adapter_rewards": [
+      0.0
+    ]
+  },
+  "oracle_sid_pool_duplicates": {
+    "candidates": 136,
+    "duplicate_candidates": 6,
+    "first_duplicate": [
+      148,
+      91,
+      3,
+      3,
+      41
+    ]
+  }
+}
