@@ -1,0 +1,191 @@
+{
+  "selection": {
+    "L0": 0,
+    "L1": 100,
+    "U1": 100
+  },
+  "source": {
+    "docs/research/2026-10-09-stage1-protocol.md": "98cc702c9e5f3572b711bd77434492cbf54d35aca1245cfe48097c7fc78d7ba5",
+    "muslate/__init__.py": "381f9922b442e91535c13c6d8e171f8e5c4e49d1431d8b39f801dafa8f6cf701",
+    "muslate/config.py": "a14a12aaa1b169cc21a8e1ef18c61907f4fc6d7d129c5acf53f1d82aac4d1ead",
+    "muslate/env/__init__.py": "524f3c33d572644b84bd7eb99b408dda8329faa2708f03f364c2cf876e3dcdb8",
+    "muslate/env/catalog.py": "c58b3a2a51befea00a1649cb676a7c1f7dd6ea6324423f6a9a2620eb12021401",
+    "muslate/env/logger.py": "2e69a616b6098c1e0ae953c797545a89f2aea1947704adc1e6c20f89607d1656",
+    "muslate/env/simulator.py": "45c092b421dd2ab1c5ce1fe55558c6f4c3ca114646f13f49f755ee480626c76c",
+    "muslate/eval/__init__.py": "599a8e8e5996604c73dfd4456081ca1d17d0febb0750599c21cc399717d8dc93",
+    "muslate/eval/calibration.py": "203e8dc2a5dd7f13446b51c7eff9a58273dfe16ee3d3c7c39a2f0cccd343fa7d",
+    "muslate/eval/integrity.py": "46fa0693a8b4d0e332f1bfd254b0eb20bf9544f2fee3267c0cd8eda6683e5051",
+    "muslate/eval/rollout.py": "ab5ba1449cdc63493afea3eeb5cc8eaec1d8c27ca3d1676ef07de88524bed041",
+    "muslate/model/__init__.py": "aaca6980c61e19e0d0ad3c46b279d716d37ed7bab378325524e7e16bed5e2240",
+    "muslate/model/checkpoint.py": "4d763b8b28593e606de258ee29904f89566b16c61f00a6db8561b50b41fff8b3",
+    "muslate/model/error_model.py": "7cf0fad93d4f8498f2a9db8bbd472449b8c793be0f745865961130472456b6ea",
+    "muslate/model/neural_model.py": "693e3ae3d4acf1e4f36bc8ff417a4bbb19917e0f7c4f10b85098d0326833d619",
+    "muslate/model/train.py": "da18ae96404264c137b3706220b016b9b84c00e244ff7d3482083b28f4040ac5",
+    "muslate/model/world_model.py": "c906df58cfc155299f21e040812b8bcfac5172b3714347a520ce8634642097bc",
+    "muslate/planning/__init__.py": "aae44f828f0fb6c52150f49e86d8f6b26cb7a2df7c457d2969ac9ec7d98aa50f",
+    "muslate/planning/abstractions.py": "cbeffa5e0ec0ccff2ad0124b2b40bacbe1f33d2a401470e26fe958f46f03fbea",
+    "muslate/planning/conservative.py": "85cbd2dd2f41fb9ed3ea41b909d7f4311add49098ffb4aa0a12a77b59b510111",
+    "muslate/planning/controlled.py": "e1d886a43369b8e53a39fab76d667e3e08a98c5f7f9104dbbb59eafaecc4da9f",
+    "muslate/planning/cost.py": "901112fe46ece4b732af6a80bdbf100c74269d71c18b6d5e47c087b67ea3a43a",
+    "muslate/planning/latent_model.py": "abb865c63a79946267a032ff1ff37a256016b1e2c01c16fa2a71abd4aff0d25a",
+    "muslate/planning/perturb.py": "6a5c23fdd84bf569782d51565317985cad5012671f08865fd2930740dac9caf4",
+    "muslate/planning/proposal.py": "42146a20ca9feae38cee8c0fb99a6a653fa7215ab3ab4da2ab65672a232313f4",
+    "muslate/planning/search.py": "46a42e067abcf469c0f5fb81c533cecd3a556c5834e74a86b5c08942580d678b",
+    "muslate/planning/sid_map.py": "ee18f9da4e2101751024be512765fff7849bc03cee498551f1c2949f6855f363",
+    "muslate/planning/validity.py": "ec477dbe26151bfa1bdd7aeb6fdd744aed6cc7267ff10769817f289ad36bf78c",
+    "ops/stage1_queue.py": "edc52ba13eb68b0fe738973fd44262b40fabdaac5c21932fbd7818c3bf7b39f6",
+    "scripts/analyze_logged_pilot.py": "e85125f409c27572aa57d824915a489fa6b1e781c691d22a929049373e8c721c",
+    "scripts/calibrate_planning_cost.py": "54b7dd7cc8ce26c8e89eebb4517822305b42979a3759906736015b2e48fb885a",
+    "scripts/reevaluate_stage1.py": "ca94dfb8ab01e9a28ed54f090942cf6556644e9fcaf75a602997e5a6b1378bb9",
+    "scripts/run_gate3.py": "455a2e4fb0ed69b307ec73c25ecd88e7dd3e6613617e6fc909fc4dba89e78d6d",
+    "scripts/run_logged_pilot.py": "0c8d2d7e6e3b21e5a4f4c772396526c132f70ac202b36b0b5f0e4d9942cb85c3"
+  },
+  "contract": {
+    "model": {
+      "latent_dim": 64,
+      "slate_emb_dim": 64,
+      "hidden_dim": 128,
+      "n_ensemble": 1,
+      "oracle_state": false,
+      "lr": 0.003,
+      "batch_size": 512,
+      "epochs": 40,
+      "rollout_depth": 3,
+      "pairwise": true,
+      "w_reward": 1.0,
+      "w_multistep": 1.0,
+      "w_state": 1.0
+    },
+    "environment": {
+      "catalog": {
+        "n_coarse": 10,
+        "n_fine": 20,
+        "dim": 32,
+        "coarse_weight": 1.0,
+        "fine_weight": 0.5,
+        "seed": 0
+      },
+      "slate_size": 5,
+      "pos_discount": 0.8,
+      "sat_decay": 0.7,
+      "sat_penalty": 0.5,
+      "pref_lr": 0.3,
+      "long_term_strength": 3.0,
+      "div_penalty": 0.8,
+      "reward_noise": 0.02,
+      "horizon": 20,
+      "gamma": 0.95,
+      "n_users": 64,
+      "seed": 0
+    },
+    "log": {
+      "n_episodes": 3000,
+      "epsilon": 0.25,
+      "temperature": 1.0,
+      "item_feedback_noise": 0.02
+    },
+    "holdout_episodes": 128,
+    "users": 16,
+    "warmup": 5,
+    "budget": 512,
+    "depth": 2,
+    "threads": 4,
+    "protocol_version": 2,
+    "feedback": "synthetic continuous unary response, noise std .02",
+    "budget_note": "deduplicated pools; calibrated operation estimate and measured latency; no hard total cost matching in E1",
+    "calibration_sha256": "52360f4efee65b680c11b78ee4ae5dafd0e3b016c950fc78c8dfa2b91666c7a9"
+  },
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "selection_rule": "validation common-prefix sid_hier mean return, lower weight tie break",
+  "validation_files": [
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L0_s1_w0/validation.json",
+      "sha256": "06902b61aafbf9a2c11d8cb2f36eee9220a6e1d79dc7e9e120e4f7c01ed2568f"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s1_w1/validation.json",
+      "sha256": "e5e434ec4fa61672834099f471cccfa01c973e702f03173341e6f7e83d42449a"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s1_w10/validation.json",
+      "sha256": "b62f45e256622fdbc5fba2ccfb55a7263c73d4a460fd6c0ea5c9291971fb76d8"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s1_w100/validation.json",
+      "sha256": "27da8c3d7475387f56d3a02d4c65b53febefac839a47b55af5e5038c298e8a21"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s1_w1/validation.json",
+      "sha256": "75d06fcab2e2bc90f6fe08bcbe7731e03aeb460cddfb96d25ea456559f0c0728"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s1_w10/validation.json",
+      "sha256": "12ab5b8ddba05d144b3ece265a4ff2d45687baae4f8a8c626ea6cf6f80c6e20e"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s1_w100/validation.json",
+      "sha256": "5eb7a84072471e0a6bf6efdc80d9c82068d4d43ef4a4fef4679b463a6c384512"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L0_s2_w0/validation.json",
+      "sha256": "5f8977e37130f5c24267e2f2caec5647880d0979b7802a5946c91b7bb3cd02a0"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s2_w1/validation.json",
+      "sha256": "e7a86f0bdf1ec48b8167fc89b5f08c05d9d6fd0ef7dd55618c98539a8fb1f13b"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s2_w10/validation.json",
+      "sha256": "0b6436236addf40a3cfd457b51debd8d61c86894e2a71b2c9fb9662bf85ea5b8"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s2_w100/validation.json",
+      "sha256": "63ef54a2997e3e59e5ca9b1beac8d299efaeec7e6013e903d54573c9956d934e"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s2_w1/validation.json",
+      "sha256": "0ab1b5a0eac13d20f55e22225e91f5f1e7cd5680beada75ee28b9c8d110b23f7"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s2_w10/validation.json",
+      "sha256": "a2a7ea7f5d480351b424636f9628c4ba6d35b0bb05cf641a814da75b9d2fce0d"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s2_w100/validation.json",
+      "sha256": "19b9cf0c5c8d2ca59086ddf32c3ea85edc492d99835579716f51a8f684911e11"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L0_s3_w0/validation.json",
+      "sha256": "37068d449d0fda7b34b6de5c7f299b8955c57be7c524e54f3f70a6dd0dd8931a"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s3_w1/validation.json",
+      "sha256": "8510ed0f40ca2612a9ff7b367e2140e02db90a6794b8e6bda765f4233683efa1"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s3_w10/validation.json",
+      "sha256": "b11338b9fa3d2c0c025b899f25fe72ac7b2ccf9baf4b26c640e2d6d42238ad12"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/L1_s3_w100/validation.json",
+      "sha256": "74e0eec2af61a41ee904f2bba889e7cb2f6da87c5e28af23ad20e3dcc0c86a26"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s3_w1/validation.json",
+      "sha256": "db12186dcc08b7674b193e0890b6eee19e7f7562d731d4ac72b953220b9ee669"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s3_w10/validation.json",
+      "sha256": "86a857f0f274356a08ac80b6fb440617bab5730ec6af4cc37918067cbc90feb4"
+    },
+    {
+      "path": "/home/xys/code/WZL/next/results/e1_stage1_20261009/U1_s3_w100/validation.json",
+      "sha256": "bd03f01b62b4d845cf544c7c47052af8b19890c7d60dd416b9a53123c3ba4763"
+    }
+  ],
+  "note": "selected only after all21 fresh validation evaluations; no new test computed for selection"
+}

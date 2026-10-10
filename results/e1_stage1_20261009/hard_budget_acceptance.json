@@ -1,0 +1,149 @@
+{
+  "scope": "toy operation weights; budget accounting acceptance, not hardware performance claim",
+  "cases": [
+    {
+      "planner": "reactive",
+      "budget": 0.0,
+      "used": 0.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "lookahead_flat",
+      "budget": 0.0,
+      "used": 0.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "lookahead_sid",
+      "budget": 0.0,
+      "used": 0.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "shooting_flat",
+      "budget": 0.0,
+      "used": 0.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "shooting_sid",
+      "budget": 0.0,
+      "used": 0.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "cem",
+      "budget": 0.0,
+      "used": 0.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "mcts_flat",
+      "budget": 0.0,
+      "used": 0.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "mcts_sid",
+      "budget": 0.0,
+      "used": 0.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "reactive",
+      "budget": 80.0,
+      "used": 5.0,
+      "status": "completed"
+    },
+    {
+      "planner": "lookahead_flat",
+      "budget": 80.0,
+      "used": 73.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "lookahead_sid",
+      "budget": 80.0,
+      "used": 80.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "shooting_flat",
+      "budget": 80.0,
+      "used": 80.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "shooting_sid",
+      "budget": 80.0,
+      "used": 70.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "cem",
+      "budget": 80.0,
+      "used": 78.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "mcts_flat",
+      "budget": 80.0,
+      "used": 80.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "mcts_sid",
+      "budget": 80.0,
+      "used": 76.0,
+      "status": "budget_exhausted"
+    },
+    {
+      "planner": "reactive",
+      "budget": 1000000.0,
+      "used": 5.0,
+      "status": "completed"
+    },
+    {
+      "planner": "lookahead_flat",
+      "budget": 1000000.0,
+      "used": 244.0,
+      "status": "completed"
+    },
+    {
+      "planner": "lookahead_sid",
+      "budget": 1000000.0,
+      "used": 370.0,
+      "status": "completed"
+    },
+    {
+      "planner": "shooting_flat",
+      "budget": 1000000.0,
+      "used": 120.0,
+      "status": "completed"
+    },
+    {
+      "planner": "shooting_sid",
+      "budget": 1000000.0,
+      "used": 234.0,
+      "status": "completed"
+    },
+    {
+      "planner": "cem",
+      "budget": 1000000.0,
+      "used": 147.0,
+      "status": "completed"
+    },
+    {
+      "planner": "mcts_flat",
+      "budget": 1000000.0,
+      "used": 92.0,
+      "status": "completed"
+    },
+    {
+      "planner": "mcts_sid",
+      "budget": 1000000.0,
+      "used": 146.0,
+      "status": "completed"
+    }
+  ]
+}

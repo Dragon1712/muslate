@@ -1,0 +1,241 @@
+{
+  "scope": "post-hoc descriptive common-prefix action/reward decomposition; true simulator values used only for evaluation; not causal module attribution",
+  "summary_sha256": "c2ec7e2feb74e709e4575b7e8a412fad1469ac3791e2b24863ed0dd5fe99263f",
+  "script_sha256": "a7b697440e3f7729c051b420c95fd0da04a8042e700ab87d7b0e6d997232b90c",
+  "n_replayed_decisions": 18000,
+  "per_condition": {
+    "L0": {
+      "reactive": {
+        "unique_coarse": 2.6816666666666666,
+        "mean_diversity_penalty": 1.3382952798329115,
+        "tail_affinity": 11.145303342345287,
+        "tail_saturation_contribution": -20.175882838345878,
+        "tail_diversity_contribution": -11.139934542222354
+      },
+      "flat_uniform": {
+        "unique_coarse": 4.415000000000001,
+        "mean_diversity_penalty": -0.011823502715425174,
+        "tail_affinity": 6.012485341508747,
+        "tail_saturation_contribution": -13.211976551281163,
+        "tail_diversity_contribution": 0.09721525305690225
+      },
+      "flat_policy": {
+        "unique_coarse": 3.5258333333333334,
+        "mean_diversity_penalty": 0.26515091854566614,
+        "tail_affinity": 7.41015734739265,
+        "tail_saturation_contribution": -16.24760341678377,
+        "tail_diversity_contribution": -2.2475573431577835
+      },
+      "sid_flat": {
+        "unique_coarse": 4.3875,
+        "mean_diversity_penalty": 0.0283652741899721,
+        "tail_affinity": 7.483831848268444,
+        "tail_saturation_contribution": -14.803896737198386,
+        "tail_diversity_contribution": -0.2513711057008957
+      },
+      "sid_hier": {
+        "unique_coarse": 4.477499999999999,
+        "mean_diversity_penalty": -0.05746674252458787,
+        "tail_affinity": 6.589169026545226,
+        "tail_saturation_contribution": -14.190389525785388,
+        "tail_diversity_contribution": 0.4813323574296297
+      }
+    },
+    "L1": {
+      "reactive": {
+        "unique_coarse": 1.9933333333333334,
+        "mean_diversity_penalty": 2.043957912676418,
+        "tail_affinity": 9.578784672303362,
+        "tail_saturation_contribution": -6.038658754463153,
+        "tail_diversity_contribution": -17.03484775524571
+      },
+      "flat_uniform": {
+        "unique_coarse": 4.652500000000001,
+        "mean_diversity_penalty": -0.057158938360434265,
+        "tail_affinity": 6.969593369414727,
+        "tail_saturation_contribution": -11.112534359930669,
+        "tail_diversity_contribution": 0.46435919189331243
+      },
+      "flat_policy": {
+        "unique_coarse": 3.0708333333333333,
+        "mean_diversity_penalty": 0.6956114783931813,
+        "tail_affinity": 8.876576304806633,
+        "tail_saturation_contribution": -8.48877748259154,
+        "tail_diversity_contribution": -5.783029238496877
+      },
+      "sid_flat": {
+        "unique_coarse": 4.660833333333334,
+        "mean_diversity_penalty": 0.6273298264592202,
+        "tail_affinity": 12.686820141993277,
+        "tail_saturation_contribution": -11.02348125174804,
+        "tail_diversity_contribution": -5.124143389569487
+      },
+      "sid_hier": {
+        "unique_coarse": 4.6825,
+        "mean_diversity_penalty": 0.12730250261015053,
+        "tail_affinity": 9.017697269132473,
+        "tail_saturation_contribution": -10.907355579618732,
+        "tail_diversity_contribution": -1.010508104142689
+      }
+    },
+    "U1": {
+      "reactive": {
+        "unique_coarse": 1.9466666666666668,
+        "mean_diversity_penalty": 2.070905477036134,
+        "tail_affinity": 9.338704670194508,
+        "tail_saturation_contribution": -5.731577306472053,
+        "tail_diversity_contribution": -17.242291474596104
+      },
+      "flat_uniform": {
+        "unique_coarse": 4.654166666666667,
+        "mean_diversity_penalty": -0.06071170600788807,
+        "tail_affinity": 6.886614658334883,
+        "tail_saturation_contribution": -11.071825435989316,
+        "tail_diversity_contribution": 0.5020914290032054
+      },
+      "flat_policy": {
+        "unique_coarse": 2.9916666666666667,
+        "mean_diversity_penalty": 0.6806127126298971,
+        "tail_affinity": 8.731175553255094,
+        "tail_saturation_contribution": -8.320968892579822,
+        "tail_diversity_contribution": -5.671165754359996
+      },
+      "sid_flat": {
+        "unique_coarse": 4.665,
+        "mean_diversity_penalty": 0.597262421371561,
+        "tail_affinity": 12.502003384298723,
+        "tail_saturation_contribution": -10.978307528157234,
+        "tail_diversity_contribution": -4.88040971979968
+      },
+      "sid_hier": {
+        "unique_coarse": 4.734999999999999,
+        "mean_diversity_penalty": 0.11842510819833985,
+        "tail_affinity": 8.96734856335799,
+        "tail_saturation_contribution": -11.061197801494819,
+        "tail_diversity_contribution": -0.9258175262330862
+      }
+    }
+  },
+  "exploratory_intervals": {
+    "L0": {
+      "flat_policy-flat_uniform": {
+        "mean": -3.98272745583339,
+        "ci95": [
+          -5.074870122234272,
+          -3.033066713103319
+        ],
+        "seed_means": [
+          -3.1763047936000595,
+          -4.722907367324456,
+          -3.0972601003587847,
+          -3.127327843370505,
+          -5.7898371745131465
+        ],
+        "n_seeds": 5,
+        "n_users": 16,
+        "note": "hierarchical paired interval"
+      },
+      "sid_flat-flat_uniform": {
+        "mean": -0.46916003791532307,
+        "ci95": [
+          -1.0387176758360925,
+          0.07523567773727702
+        ],
+        "seed_means": [
+          0.14493332916250973,
+          -1.1213081959014555,
+          -1.0433064131213996,
+          -0.12268343156079964,
+          -0.20343547815547047
+        ],
+        "n_seeds": 5,
+        "n_users": 16,
+        "note": "hierarchical paired interval"
+      }
+    },
+    "L1": {
+      "flat_policy-flat_uniform": {
+        "mean": -1.7166486176591547,
+        "ci95": [
+          -2.107455749349589,
+          -1.3859884990140705
+        ],
+        "seed_means": [
+          -1.3110432227522368,
+          -1.602653766683569,
+          -2.3693033886292585,
+          -1.4958236342726772,
+          -1.804419075958032
+        ],
+        "n_seeds": 5,
+        "n_users": 16,
+        "note": "hierarchical paired interval"
+      },
+      "sid_flat-flat_uniform": {
+        "mean": 0.21777729929837913,
+        "ci95": [
+          -0.049316545633613956,
+          0.4420361924039787
+        ],
+        "seed_means": [
+          0.348899503591482,
+          0.5086130032208718,
+          -0.23128782324434938,
+          0.3285104585300667,
+          0.13415135439382447
+        ],
+        "n_seeds": 5,
+        "n_users": 16,
+        "note": "hierarchical paired interval"
+      }
+    },
+    "U1": {
+      "flat_policy-flat_uniform": {
+        "mean": -1.577839745033498,
+        "ci95": [
+          -1.746773904224436,
+          -1.3991481959746106
+        ],
+        "seed_means": [
+          -1.4378861639470308,
+          -1.618070573339423,
+          -1.6174171442798968,
+          -1.6358798691464103,
+          -1.5799449744547305
+        ],
+        "n_seeds": 5,
+        "n_users": 16,
+        "note": "hierarchical paired interval"
+      },
+      "sid_flat-flat_uniform": {
+        "mean": 0.3264054849930364,
+        "ci95": [
+          0.15229749050858704,
+          0.5121637254174916
+        ],
+        "seed_means": [
+          0.5758187687105314,
+          0.41627991219764676,
+          0.32792963717278484,
+          0.14923602831111915,
+          0.16276307857309977
+        ],
+        "n_seeds": 5,
+        "n_users": 16,
+        "note": "hierarchical paired interval"
+      }
+    }
+  },
+  "discounted_suffix_component_differences": {
+    "L1_hier-L1_uniform": {
+      "tail_affinity": 2.048103899717746,
+      "tail_saturation_contribution": 0.20517878031193604,
+      "tail_diversity_contribution": -1.4748672960360016
+    },
+    "L1_hier-L0_hier": {
+      "tail_affinity": 2.428528242587247,
+      "tail_saturation_contribution": 3.283033946166656,
+      "tail_diversity_contribution": -1.4918404615723189
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scope": "post-hoc exploratory interaction; not an additional preregistered success criterion",
+  "summary_sha256": "c2ec7e2feb74e709e4575b7e8a412fad1469ac3791e2b24863ed0dd5fe99263f",
+  "interaction_hier_uniform_by_feedback": {
+    "common_prefix": {
+      "mean": 0.7960275690886978,
+      "ci95": [
+        0.4477150427906997,
+        1.142677010999402
+      ],
+      "seed_means": [
+        0.6033886761361091,
+        1.2279525663407778,
+        0.6889792191764939,
+        0.5600557021743835,
+        0.8997616816157246
+      ],
+      "n_seeds": 5,
+      "n_users": 16,
+      "note": "hierarchical paired interval"
+    },
+    "full_episode": {
+      "mean": 0.5662552300579013,
+      "ci95": [
+        -0.04125061300489148,
+        1.237555629515574
+      ],
+      "seed_means": [
+        0.1759484874358616,
+        1.5628244488696739,
+        -0.19440996008858713,
+        0.5165654462932738,
+        0.7703477277792845
+      ],
+      "n_seeds": 5,
+      "n_users": 16,
+      "note": "hierarchical paired interval"
+    }
+  },
+  "logged_reward_mae_relative_reduction": 0.5429617029921443,
+  "hier_to_uniform_latency_ratio": 5.754499702850336,
+  "hier_vs_sidflat_latency_reduction": 0.24569953995790217
+}

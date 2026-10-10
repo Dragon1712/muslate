@@ -1,0 +1,145 @@
+{
+  "total_tests": 140,
+  "files": [
+    {
+      "file": "test_conservative.py",
+      "exit_code": 0,
+      "n_tests": 9,
+      "stdout": "ok  test_adaptive_horizon_returns_a_valid_horizon\nok  test_behavior_support_is_discriminative\nok  test_biased_model_bias_grows_with_saturation\nok  test_biased_model_leaves_the_environment_alone\nok  test_latent_support_zero_at_reference_and_grows_away\nok  test_ood_penalty_reduces_rewards_monotonically\nok  test_perfect_uncertainty_equals_absolute_bias\nok  test_uncertainty_penalty_requires_an_ensemble\nok  test_zero_penalty_is_identity\n\n9 tests passed\n",
+      "stderr": ""
+    },
+    {
+      "file": "test_env.py",
+      "exit_code": 0,
+      "n_tests": 9,
+      "stdout": "ok  test_batch_matches_loop\nok  test_diversity_breaks_separability\nok  test_diversity_is_immediate_not_delayed\nok  test_diversity_penalises_same_category_slates\nok  test_diversity_penalty_is_zero_by_default\nok  test_horizon_and_gamma\nok  test_lt0_is_a_bandit\nok  test_saturation_penalty_is_delayed\nok  test_sid_hierarchy_is_meaningful\n\n9 tests passed\n",
+      "stderr": ""
+    },
+    {
+      "file": "test_error_model.py",
+      "exit_code": 0,
+      "n_tests": 7,
+      "stdout": "ok  test_collect_latents_matches_state_dim\nok  test_correlation_helpers\nok  test_error_dataset_pairs_match_the_planner_query\nok  test_error_dataset_stride_shrinks_it\nok  test_error_model_accepts_leading_batch_dims\nok  test_error_model_output_is_non_negative_and_shaped\nok  test_training_runs_and_predictions_vary\n\n7 tests passed\n",
+      "stderr": ""
+    },
+    {
+      "file": "test_finite_horizon.py",
+      "exit_code": 0,
+      "n_tests": 6,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.278s\n\nOK\n"
+    },
+    {
+      "file": "test_logged_training.py",
+      "exit_code": 0,
+      "n_tests": 8,
+      "stdout": "",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 1.553s\n\nOK\n"
+    },
+    {
+      "file": "test_observed_log.py",
+      "exit_code": 0,
+      "n_tests": 5,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.102s\n\nOK\n"
+    },
+    {
+      "file": "test_perturb.py",
+      "exit_code": 0,
+      "n_tests": 8,
+      "stdout": "ok  test_bias_is_constant_within_a_class\nok  test_bias_is_fixed_across_calls\nok  test_bias_shifts_classes_differently\nok  test_reward_and_step_delegate_unchanged\nok  test_score_driven_pool_does_change\nok  test_state_dim_and_item_counts_are_mirrored\nok  test_uniform_pool_is_immune_to_the_score_corruption\nok  test_zero_noise_is_the_identity\n\n8 tests passed\n",
+      "stderr": ""
+    },
+    {
+      "file": "test_pilot_analysis.py",
+      "exit_code": 0,
+      "n_tests": 7,
+      "stdout": "",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 2.079s\n\nOK\n"
+    },
+    {
+      "file": "test_pilot_manifest.py",
+      "exit_code": 0,
+      "n_tests": 7,
+      "stdout": "",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.097s\n\nOK\n"
+    },
+    {
+      "file": "test_planning.py",
+      "exit_code": 0,
+      "n_tests": 20,
+      "stdout": "ok  test_all_planners_spend_model_budget\nok  test_cem_and_shooting_agree_on_validity\nok  test_cem_sampler_never_repeats_items\nok  test_counting_model_counts_slate_evaluations\nok  test_gate3_variants_default_to_no_penalty\nok  test_gate3_variants_wire_the_adjust_hook_into_every_planner\nok  test_lookahead_reduces_to_pool_argmax_for_any_proposal\nok  test_lookahead_zero_is_pool_argmax\nok  test_mcts_depth0_reduces_to_the_prior_argmax\nok  test_mcts_the_tree_can_disagree_with_its_own_prior\nok  test_no_repeated_items_in_pool\nok  test_noisy_tree_still_completes_with_the_real_item_scores\nok  test_planners_return_valid_slates\nok  test_proposal_pool_contains_greedy\nok  test_sid_pool_contains_the_greedy_anchor\nok  test_sid_proposal_accepts_a_custom_map_and_stays_backward_compatible\nok  test_sid_proposal_cost_is_reported_correctly\nok  test_sid_proposal_rejects_a_map_with_too_few_classes\nok  test_sid_proposal_requires_a_map_or_legacy_dims\nok  test_sid_proposal_shape_and_validity\n\n20 tests passed\n",
+      "stderr": ""
+    },
+    {
+      "file": "test_planning_budget.py",
+      "exit_code": 0,
+      "n_tests": 8,
+      "stdout": "",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 1.887s\n\nOK\n"
+    },
+    {
+      "file": "test_purity_metrics.py",
+      "exit_code": 0,
+      "n_tests": 3,
+      "stdout": "ok  test_summarize_row_rejects_a_missing_planner\nok  test_summarize_row_reports_both_baselines\nok  test_the_two_baselines_disagree_exactly_when_the_prior_is_bad\n\n3 tests passed\n",
+      "stderr": ""
+    },
+    {
+      "file": "test_result_integrity.py",
+      "exit_code": 0,
+      "n_tests": 5,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.103s\n\nOK\n"
+    },
+    {
+      "file": "test_reward_consistency.py",
+      "exit_code": 0,
+      "n_tests": 2,
+      "stdout": "",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.018s\n\nOK\n"
+    },
+    {
+      "file": "test_sid_map.py",
+      "exit_code": 0,
+      "n_tests": 8,
+      "stdout": "ok  test_items_by_coarse_is_a_partition\nok  test_learned_is_deterministic_given_seed\nok  test_learned_recovers_planted_cluster_structure\nok  test_noisy_is_a_controlled_departure_from_oracle\nok  test_random_tree_preserves_class_sizes\nok  test_uniform_matches_the_legacy_layout\nok  test_uniform_rejects_inconsistent_dimensions\nok  test_unknown_kind_is_rejected\n\n8 tests passed\n",
+      "stderr": ""
+    },
+    {
+      "file": "test_slate_validity.py",
+      "exit_code": 0,
+      "n_tests": 6,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.065s\n\nOK\n"
+    },
+    {
+      "file": "test_stage1_reevaluation.py",
+      "exit_code": 0,
+      "n_tests": 4,
+      "stdout": "L1_s1_w1: validation on cpu\n  validation/warm0/reactive: return=3.3572 decisions=3\n  validation/warm0/flat_uniform: return=3.3697 decisions=3\n  validation/warm0/flat_policy: return=3.3572 decisions=3\n  validation/warm0/sid_flat: return=3.3572 decisions=3\n  validation/warm0/sid_hier: return=3.3572 decisions=3\n  validation/warm1/reactive: return=3.3872 decisions=2\n  validation/warm1/flat_uniform: return=3.4357 decisions=2\n  validation/warm1/flat_policy: return=3.3872 decisions=2\n  validation/warm1/sid_flat: return=3.3872 decisions=2\n  validation/warm1/sid_hier: return=3.3872 decisions=2\nL1_s1_w1: validation COMPLETE\nL1_s1_w1: validation COMPLETE\nL1_s1_w1: validation COMPLETE\n",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 3.710s\n\nOK\n"
+    },
+    {
+      "file": "test_stage1_review.py",
+      "exit_code": 0,
+      "n_tests": 6,
+      "stdout": "{\"L0\": 0, \"L1\": 100, \"U1\": 100}\n",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 4.778s\n\nOK\n"
+    },
+    {
+      "file": "test_warm_start.py",
+      "exit_code": 0,
+      "n_tests": 4,
+      "stdout": "",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.095s\n\nOK\n"
+    },
+    {
+      "file": "test_world_model.py",
+      "exit_code": 0,
+      "n_tests": 8,
+      "stdout": "ok  test_ensemble_disagreement_is_zero_for_identical_models\nok  test_neural_model_matches_simulator_when_fitted\nok  test_pairwise_head_can_express_the_environment_diversity_penalty\nok  test_pairwise_off_reproduces_the_unary_only_model\nok  test_pairwise_term_is_symmetric_in_item_identity\nok  test_shapes_and_history_encoding\nok  test_step_latent_moves_state\nok  test_unary_part_is_decomposable_into_item_scores\n\n8 tests passed\n",
+      "stderr": ""
+    }
+  ]
+}

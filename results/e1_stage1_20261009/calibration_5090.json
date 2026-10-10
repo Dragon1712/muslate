@@ -1,0 +1,178 @@
+{
+  "reference_batch": 128,
+  "repeats": 20,
+  "model_benchmarks": [
+    {
+      "operation": "reward",
+      "batch": 1,
+      "median_ms": 0.40546595118939877,
+      "q10_ms": 0.39194575510919094,
+      "q90_ms": 0.41077700443565845
+    },
+    {
+      "operation": "step",
+      "batch": 1,
+      "median_ms": 0.571906566619873,
+      "q10_ms": 0.5626832135021687,
+      "q90_ms": 0.5814003758132458
+    },
+    {
+      "operation": "item_scores",
+      "batch": 1,
+      "median_ms": 0.2108828630298376,
+      "q10_ms": 0.20626382902264595,
+      "q90_ms": 0.22541587240993977
+    },
+    {
+      "operation": "reward",
+      "batch": 16,
+      "median_ms": 0.4145947750657797,
+      "q10_ms": 0.4059170838445425,
+      "q90_ms": 0.4244852811098099
+    },
+    {
+      "operation": "step",
+      "batch": 16,
+      "median_ms": 0.5910161416977644,
+      "q10_ms": 0.5822883453220129,
+      "q90_ms": 0.5979134701192379
+    },
+    {
+      "operation": "item_scores",
+      "batch": 16,
+      "median_ms": 0.2104125451296568,
+      "q10_ms": 0.2066565677523613,
+      "q90_ms": 0.21765786223113537
+    },
+    {
+      "operation": "reward",
+      "batch": 128,
+      "median_ms": 0.4356261342763901,
+      "q10_ms": 0.42776037007570267,
+      "q90_ms": 0.4449544008821249
+    },
+    {
+      "operation": "step",
+      "batch": 128,
+      "median_ms": 0.6330839823931456,
+      "q10_ms": 0.6261981092393398,
+      "q90_ms": 0.639378884807229
+    },
+    {
+      "operation": "item_scores",
+      "batch": 128,
+      "median_ms": 0.2434663474559784,
+      "q10_ms": 0.24023624137043953,
+      "q90_ms": 0.25310213677585125
+    },
+    {
+      "operation": "reward",
+      "batch": 512,
+      "median_ms": 0.4474194720387459,
+      "q10_ms": 0.4408787004649639,
+      "q90_ms": 0.45687127858400345
+    },
+    {
+      "operation": "step",
+      "batch": 512,
+      "median_ms": 0.6567144300788641,
+      "q10_ms": 0.6511779967695475,
+      "q90_ms": 0.6615803111344576
+    },
+    {
+      "operation": "item_scores",
+      "batch": 512,
+      "median_ms": 0.2786500845104456,
+      "q10_ms": 0.27297879569232464,
+      "q90_ms": 0.28602411039173603
+    }
+  ],
+  "proposal_benchmarks": {
+    "flat_uniform": {
+      "per_candidate_ms": 0.00580807954975171,
+      "q10": 0.005786013571196236,
+      "q90": 0.005898838753637392
+    },
+    "flat_policy": {
+      "per_candidate_ms": 0.0227661948883906,
+      "q10": 0.022689966863254085,
+      "q90": 0.023130795580073027
+    },
+    "sid_flat": {
+      "per_candidate_ms": 0.10384475899627432,
+      "q10": 0.103411462623626,
+      "q90": 0.10530079307500273
+    },
+    "sid_hier": {
+      "per_candidate_ms": 0.04955087981357015,
+      "q10": 0.0493174153275453,
+      "q90": 0.04995938776197624
+    }
+  },
+  "method_weights": {
+    "reactive": {
+      "reward_ms": 0.0034033291740342975,
+      "transition_ms": 0.00494596861244645,
+      "score_ms": 0.0019020808394998312,
+      "proposal_ms": 0.036158537350980374
+    },
+    "flat_uniform": {
+      "reward_ms": 0.0034033291740342975,
+      "transition_ms": 0.00494596861244645,
+      "score_ms": 0.0019020808394998312,
+      "proposal_ms": 0.00580807954975171
+    },
+    "flat_policy": {
+      "reward_ms": 0.0034033291740342975,
+      "transition_ms": 0.00494596861244645,
+      "score_ms": 0.0019020808394998312,
+      "proposal_ms": 0.0227661948883906
+    },
+    "sid_flat": {
+      "reward_ms": 0.0034033291740342975,
+      "transition_ms": 0.00494596861244645,
+      "score_ms": 0.0019020808394998312,
+      "proposal_ms": 0.10384475899627432
+    },
+    "sid_hier": {
+      "reward_ms": 0.0034033291740342975,
+      "transition_ms": 0.00494596861244645,
+      "score_ms": 0.0019020808394998312,
+      "proposal_ms": 0.04955087981357015
+    }
+  },
+  "scope": "linear calibrated operation-cost estimate; actual end-to-end latency reported separately; reference batch scaling is approximate",
+  "runtime": {
+    "python": "3.10.22",
+    "numpy": "2.0.2",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "device": "cuda:0",
+    "host": "master",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "cpu_threads": 4
+  },
+  "checkpoint": "/home/xys/code/WZL/next/results/e1_pilot_20261008_v2/L1_s1_w100/model.pt",
+  "environment": {
+    "catalog": {
+      "n_coarse": 10,
+      "n_fine": 20,
+      "dim": 32,
+      "coarse_weight": 1.0,
+      "fine_weight": 0.5,
+      "seed": 0
+    },
+    "slate_size": 5,
+    "pos_discount": 0.8,
+    "sat_decay": 0.7,
+    "sat_penalty": 0.5,
+    "pref_lr": 0.3,
+    "long_term_strength": 3.0,
+    "div_penalty": 0.8,
+    "reward_noise": 0.02,
+    "horizon": 20,
+    "gamma": 0.95,
+    "n_users": 64,
+    "seed": 0
+  }
+}
